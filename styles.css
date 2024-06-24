@@ -95,12 +95,12 @@ body {
     height: auto;
     margin: 0 10px;
 }
-/* Specific styling for Twitter image */
+/* TWITTER IMAGE */
 .social-links img[src*='twitter_x_new_logo_square_x_icon_256075.png'] {
     width: 60px;  
     height: auto;
 }
-/* Form Styling */
+/* FORM  */
 form {
     background-color: gray;
     padding: 1em;
