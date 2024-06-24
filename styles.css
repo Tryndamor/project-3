@@ -50,13 +50,28 @@ font-size: 100%;
 }
 /*  SITE LINKS */
 .site-links{
-    margin: auto;
-    line-height: 200px;
+    margin: 0 1em;
     color: black;
     text-transform: uppercase;
     
 }
+.site-links a {
+    display: block;
+    margin: 1em;
+}
+.site-links a:hover {
+    margin-left: 2em;
+}
 /* SOCIAL LINKS */
 .social-links{
-
+    background-color: navy;
+    width: inherit;
+    position: inherit;
+    bottom: 0;
+}
+.social-links img {
+    background-color: navy;
+    width: 50%;
+    height: auto;
+    float: left;
 }
