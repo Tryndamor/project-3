@@ -6,72 +6,143 @@ body {
 }
 
 .navigation {
-    background-color:Navy;
+    background-color: Navy;
     width: 300px;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
 }
+
 .navigation a {
     text-decoration: none;
     color: whitesmoke;
 }
-.main{
-    background-color:gray;
+
+.main {
+    background-color: gray;
     margin-left: 300px;
     padding: 1em;
     overflow: auto;
+    min-height: 100vh;
 }
+
 /* BANNER IMAGE SIZE */
-.banner{
-    width:50%;
-    height:auto;
+.banner {
+    width: 40%;
+    height: auto;
 }
+
 /* LOGO + SITE TITLE DETAILS */
-.site-info{
-margin: 2em auto;
-text-align: center;
-font-size: 100%;
+.site-info {
+    text-align: center;
+    font-size: 100%;
+    margin-top: 2em;
 }
-.logo{
-    background-color:gray;
+
+.logo {
+    background-color: gray;
     width: 200px;
     height: 200px;
-    margin: 0 auto 2em;
+    margin: 0 auto 1em;
     line-height: 200px;
     color: black;
     text-transform: uppercase;
     border: 5px solid navy;
     border-radius: 100%;
+    background-image: url('https://i.pinimg.com/originals/ea/48/58/ea4858a84404bcab62a54adfe754d382.jpg');
+    background-size: cover;
+    background-position: center;
 }
+
 .logo:hover {
     border: 5px solid purple;
 }
-/*  SITE LINKS */
-.site-links{
-    margin: 0 1em;
+
+/* SITE LINKS */
+.site-links {
+    margin-top: 2em;
     color: black;
     text-transform: uppercase;
-    
+    width: 100%;
+    text-align: center;
 }
+
 .site-links a {
     display: block;
     margin: 1em;
 }
+
 .site-links a:hover {
     margin-left: 2em;
 }
+
 /* SOCIAL LINKS */
-.social-links{
-    background-color: navy;
-    width: inherit;
-    position: inherit;
-    bottom: 0;
+.social-links {
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
 }
+
 .social-links img {
-    background-color: navy;
-    width: 50%;
+    width: 30px;  
     height: auto;
-    float: left;
+    margin: 0 10px;
+}
+/* Specific styling for Twitter image */
+.social-links img[src*='twitter_x_new_logo_square_x_icon_256075.png'] {
+    width: 60px;  
+    height: auto;
+}
+/* Form Styling */
+form {
+    background-color: gray;
+    padding: 1em;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 2em 0;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: navy;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid navy;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.form-group textarea {
+    resize: none;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 1em 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

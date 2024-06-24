@@ -3,32 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Contact Us</h1>
-        <p>This is the contact page.</p>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Submit</button>
+    <div class="navigation">
+        <!-- links to socials-->
+        <div class="social-links">
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhFIOhE1IBB8DWh_cJp4fCACvUxFpG4P5KaatAx7wDJg0HxuD12-y8aa5eUaByAr-OLGc&usqp=CAU" 
+              title="Visit us on Facebook" /></a>
+            <a href="#"><img src="https://cdn.icon-icons.com/icons2/4029/PNG/512/twitter_x_new_logo_square_x_icon_256075.png" 
+              title="Visit us on Twitter" /></a>
+        </div>
+        <!--Logo and Site Title Links-->
+        <div class="site-info">
+          <a href="index.html"><div class="logo"></div></a>
+          <a href="index.html">The Adventurers Guild</a>
+        </div>
+
+        <!-- Links to site pages -->
+         <div class="site-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+         </div>
+
+        
+    </div>
+    <div class="main">
+        <h1>Contact me Adventurers.</h1>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Discord:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
         </form>
-    </main>
-    <footer>
-        <p>&copy; 2024 Your Website</p>
-    </footer>
-</body>
+    </div>
+</body> 
 </html>

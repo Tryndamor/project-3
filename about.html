@@ -3,28 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>About Us</h1>
-        <p>This is the about page.</p>
-        <div class="media">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    <div class="navigation">
+        <!-- links to socials-->
+        <div class="social-links">
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhFIOhE1IBB8DWh_cJp4fCACvUxFpG4P5KaatAx7wDJg0HxuD12-y8aa5eUaByAr-OLGc&usqp=CAU" 
+              title="Visit us on Facebook" /></a>
+            <a href="#"><img src="https://cdn.icon-icons.com/icons2/4029/PNG/512/twitter_x_new_logo_square_x_icon_256075.png" 
+              title="Visit us on Twitter" /></a>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Your Website</p>
-    </footer>
-</body>
+        <!--Logo and Site Title Links-->
+        <div class="site-info">
+          <a href="index.html"><div class="logo"></div></a>
+          <a href="index.html">The Adventurers Guild</a>
+        </div>
+
+        <!-- Links to site pages -->
+         <div class="site-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+         </div>
+
+        
+    </div>
+    <div class="main">
+        <!--- Main content: text, images, etc -->
+        <img src="https://wallpapers.com/images/hd/elden-ring-background-s25ywisqbsb33ghy.jpg" 
+        class="banner" title="Kakashi reading his books!" alt="Kakashi reading" />
+        <h1><em> "The fallen leaves tell a story. Of how a Tarnished became Elden lord" </em></h1>
+        <h2><em> Elden Lord? <br> You are maidenless.</em></h2>
+        <p> If you dont know about Elden Ring and especially now with the new DLC "Shadow of the Erdtree". <br> Check it out ! </p>
+        <div id="video" class="container"> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6uT8wGtB3yQ?si=9Lj4HEK87yKFeS1J" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body> 
 </html>
